@@ -19,7 +19,7 @@
 # 	puts "You get a 'C'"
 # elsif score >=80 && score < 90
 # 	puts "You get a 'B'"	
-# elsif score >=90 && score < 100
+# elsif score >=90 && score <= 100
 # 	puts "You get an 'A'"
 # else
 # 	puts "That's definitely the wrong score!"
@@ -43,29 +43,31 @@
 
  
 
-# # 3. Create a program that takes a name (or any word, really), and spells it out, one letter at a time (horizontally). Then have the name/word spelled out in one line (vertically), but with commas between each letter (but not after the last letter).
+# 3. Create a program that takes a name (or any word, really), and spells it out, one letter at a time (horizontally). Then have the name/word spelled out in one line (vertically), but with commas between each letter (but not after the last letter).
 
-# puts "Give me any word:"
+puts "Give me any word:"
 
-# word = gets.chomp.upcase
+word = gets.chomp.upcase
 
-# array = word.split("")
+array = word.split("")
 
-# array.each do |a|
-# 	print "#{a} "
-# end	
+array.each do |a|
+	print "#{a} "
+end	
 
-# puts "\n"
 
-# length = array.length
-# array.each_with_index do |a,i|
-# 	if i == length-1 
-# 		puts a
 
-# 	else 
-# 		puts "#{a},"
-# 	end	
-# end
+puts "\n"
+
+length = array.length
+array.each_with_index do |a,i|
+	if i == length-1 
+		puts a
+
+	else 
+		puts "#{a},"
+	end	
+end
 
  
 
